@@ -1,0 +1,32 @@
+sections:
+  main:
+    display: Main
+    fields:
+      page:
+        fieldset: page
+        type: partial
+        display: Page
+      profile_picture:
+        container: main
+        folder: img
+        restrict: true
+        max_files: 1
+        type: assets
+        display: 'Profile Picture'
+        validate: required
+      name:
+        type: text
+        display: Name
+        validate: required
+      email:
+        type: text
+        width: 50
+        display: Email
+        validate: required|email
+      phone_number:
+        type: text
+        width: 50
+        display: 'Phone Number'
+        validate: required
+taxonomies: true
+title: Contact

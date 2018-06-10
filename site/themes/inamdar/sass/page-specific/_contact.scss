@@ -1,0 +1,32 @@
+.contact-page {
+    padding-top: $main-nav-height;
+}
+
+.contact-page__container {
+    padding: 1rem;
+}
+
+.contact-page__profile-picture {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 100%;
+    padding: 1rem;
+}
+
+.contact-page__title {
+    margin: 0;
+}
+
+.contact-page__details {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact-page__details-name {
+    font-weight: 700;
+}
+
+.contact-page__details-link {
+    color: inherit;
+}

@@ -13,7 +13,7 @@ sections:
       featured_image:
         container: main
         folder: img
-        restrict: false
+        restrict: true
         type: assets
         display: 'Featured Image'
         max_files: 1
