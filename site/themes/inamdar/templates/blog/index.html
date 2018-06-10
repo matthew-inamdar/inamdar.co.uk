@@ -3,7 +3,7 @@
         <h1>{{ title }}</h1>
         <div>{{ content }}</div>
 
-        {{ collection from="blog" as="posts" paginate="true" limit="1" }}
+        {{ collection from="blog" as="posts" paginate="true" limit="2" }}
             {{ posts }}
                 <article class="blog-index-page__article {{ if last }}blog-index-page__article--last{{ /if }}">
                     <a class="blog-index-page__article-link" href="{{ url }}">

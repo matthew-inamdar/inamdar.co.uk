@@ -15,6 +15,7 @@
     <div id="site" class="site {{ page_class }}">
         {{ partial:main-nav }}
         {{ template_content }}
+        {{ if segment_1 }}{{ partial:footer }}{{ /if }}
     </div>
     <script src="{{ theme:js }}"></script>
 </body>
