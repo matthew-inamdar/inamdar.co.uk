@@ -1,0 +1,16 @@
+<nav class="main-nav">
+    <span class="main-nav__brand">
+        <a class="main-nav__link main-nav__link--brand" href="/"><span class="main-nav__brand-bold">Matthew</span> Inamdar</a>
+    </span>
+
+    <button class="main-nav__toggle" type="button" @click="onNavToggleClick">
+        <i v-if="navExpanded" class="fal fa-fw fa-times"></i>
+        <i v-else class="fal fa-fw fa-bars"></i>
+    </button>
+
+    <ul class="main-nav__list" :class="{'main-nav__list--expanded': navExpanded}">
+        {{ nav from="/" max_depth="1" }}<!--
+    --> <li class="main-nav__item"><a class="main-nav__link {{ if is_current || is_parent }}main-nav__link--active{{ /if }}" href="{{ url }}">{{ title }}</a></li><!--
+    --> {{ /nav }}
+    </ul>
+</nav>

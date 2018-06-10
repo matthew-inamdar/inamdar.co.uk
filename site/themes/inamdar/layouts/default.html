@@ -7,11 +7,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ title ensure_right=" / " }}{{ site_name }}</title>
+    <title>{{ if segment_1 }}{{ title }} | {{ /if }}{{ site_name }}</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-oi8o31xSQq8S0RpBcb4FaLB8LJi9AT8oIdmS1QldR8Ui7KUQjNAnDlJjp55Ba8FG" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ theme:css }}">
 </head>
 <body>
-    {{ template_content }}
+    <div id="site" class="site {{ page_class }}">
+        {{ partial:main-nav }}
+        {{ template_content }}
+    </div>
     <script src="{{ theme:js }}"></script>
 </body>
 </html>

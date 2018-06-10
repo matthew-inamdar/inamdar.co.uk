@@ -1,4 +1,4 @@
-hide: true
+hide: false
 sections:
   main:
     display: Main
@@ -7,10 +7,8 @@ sections:
         fieldset: page
         type: partial
         display: Page
-      subtitle:
-        type: text
-        display: Subtitle
-        validate: required
+      content:
+        type: markdown
 taxonomies: true
-title: Home
+title: Blog Index
 create_title: ''

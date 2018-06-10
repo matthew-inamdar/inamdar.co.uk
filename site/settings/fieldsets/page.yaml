@@ -6,6 +6,7 @@ sections:
         display: Title
         type: text
         width: 66
+        localizable: true
       page_class:
         type: text
         width: 33
@@ -14,3 +15,4 @@ sections:
 taxonomies: true
 title: Page
 create_title: ''
+hide: true

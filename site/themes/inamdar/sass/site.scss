@@ -1,0 +1,14 @@
+// Normalize.
+@import "~normalize.css/normalize.css";
+
+// Fonts.
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:700');
+
+// Partials.
+@import "variables";
+@import "core";
+@import "site";
+@import "main-nav";
+
+// Page specific partials.
+@import "page-specific/home";
