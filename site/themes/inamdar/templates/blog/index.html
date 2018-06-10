@@ -1,6 +1,6 @@
 <main class="blog-index-page">
     <div class="blog-index-page__content">
-        <h1>{{ title }}</h1>
+        <h1 class="blog-index-page__title">{{ title }}</h1>
         <div>{{ content }}</div>
 
         {{ collection from="blog" as="posts" paginate="true" limit="2" }}
