@@ -16,6 +16,10 @@ $primary-gradient: linear-gradient($medium-blue, $light-blue);
 $font-color: $primary;
 $background-color: $light-grey;
 
+// Fonts.
+$content-font: 'Lora', serif;
+$heading-font: 'Open Sans', sans-serif;
+
 // Measurements.
 $main-nav-height: calc((1.5 * 1rem) + (2 * 1rem));
 $border-radius: 3px;
