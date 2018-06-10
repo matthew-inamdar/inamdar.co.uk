@@ -4,3 +4,6 @@ url: /assets
 assets:
   img/aerial-shot-aerial-view-architecture-903028.jpg:
     alt: 'An arial image of a building'
+  img/matthew-cropped.jpg:
+    alt: 'Picture of Matthew''s face'
+    focus: 58-50
