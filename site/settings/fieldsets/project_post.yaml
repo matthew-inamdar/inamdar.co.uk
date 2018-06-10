@@ -1,0 +1,35 @@
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        display: Title
+        type: text
+        localizable: true
+        width: 50
+      preview_url:
+        type: text
+        width: 50
+        display: 'Preview URL'
+        validate: url
+      excerpt:
+        type: textarea
+        display: Excerpt
+        validate: required
+      featured_image:
+        container: main
+        folder: img
+        restrict: false
+        type: assets
+        display: 'Featured Image'
+        max_files: 1
+      content:
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
+        display: Content
+        validate: required
+taxonomies: true
+title: 'Project Post'
+hide: true
+create_title: ''

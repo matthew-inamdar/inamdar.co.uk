@@ -1,1 +1,19 @@
-<code>templates/projects/post.html</code>
+<main class="projects-post-page">
+        <div class="projects-post-page__container">
+            <h1 class="projects-post-page__back">
+                <a class="projects-post-page__back-link" href="{{ parent:url }}"><span class="fal fa-fw fa-chevron-left"></span>Projects</a>
+            </h1>
+        </div>
+
+        {{ assets:featured_image }}
+        <img class="projects-post-page__featured-image" src="{{ url }}" title="{{ title }}" alt="{{ alt }}">
+        {{ /assets:featured_image }}
+
+        <div class="projects-post-page__container">
+            <h2 class="projects-post-page__title">{{ title }}</h2>
+            {{ if preview_url }}<a class="projects-post-page__preview-link" href="{{ preview_url }}" target="_blank">View the project here</a>{{ /if }}
+            <div>{{ content }}</div>
+
+            <footer class="projects-post-page__footer">Published {{ date | relative }}</footer>
+        </div>
+    </main>

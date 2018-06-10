@@ -1,0 +1,35 @@
+.projects-post-page {
+    padding-top: $main-nav-height;
+}
+
+.projects-post-page__container {
+    padding: 1rem;
+}
+
+.projects-post-page__back {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.projects-post-page__back-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.projects-post-page__title {
+    margin: 0;
+}
+
+.projects-post-page__preview-link {
+    color: $dark-grey;
+}
+
+.projects-post-page__featured-image {
+    width: 100%;
+    max-width: 100%;
+}
+
+.projects-post-page__footer {
+    color: $dark-grey;
+    font-size: .75rem;
+}

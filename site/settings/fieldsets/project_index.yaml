@@ -1,0 +1,14 @@
+hide: false
+sections:
+  main:
+    display: Main
+    fields:
+      page:
+        fieldset: page
+        type: partial
+        display: Page
+      content:
+        type: markdown
+taxonomies: true
+title: Project Index
+create_title: ''
