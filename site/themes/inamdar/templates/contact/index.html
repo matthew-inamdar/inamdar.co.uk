@@ -1,23 +1,27 @@
-<main class="contact-page">
+<main class="container contact-page">
     <div class="contact-page__container">
-        {{ assets:profile_picture }}
-        <img class="contact-page__profile-picture" src="{{ url }}" title="{{ title }}" alt="{{ alt }}">
-        {{ /assets:profile_picture }}
+        <div class="contact-page__image-section">
+            {{ assets:profile_picture }}
+            <img class="contact-page__profile-picture" src="{{ url }}" title="{{ title }}" alt="{{ alt }}">
+            {{ /assets:profile_picture }}
+        </div>
 
-        <h1 class="contact-page__title">{{ title }}</h1>
+        <div class="contact-page__details-section">
+            <h1 class="contact-page__title">{{ title }}</h1>
 
-        <ul class="contact-page__details">
-            <li>
-                <span class="contact-page__details-name">{{ name }}</span>
-            </li>
-            <li>
-                <span class="fal fa-fw fa-paper-plane"></span>
-                <a class="contact-page__details-link" href="mailto:{{ email }}">{{ email }}</a>
-            </li>
-            <li>
-                <span class="fal fa-fw fa-mobile"></span>
-                <a class="contact-page__details-link" href="tel:{{ phone_number }}">{{ phone_number }}</a>
-            </li>
-        </ul>
+            <ul class="contact-page__details">
+                <li>
+                    <span class="contact-page__details-name">{{ name }}</span>
+                </li>
+                <li>
+                    <span class="fal fa-fw fa-paper-plane"></span>
+                    <a class="contact-page__details-link" href="mailto:{{ email }}">{{ email }}</a>
+                </li>
+                <li>
+                    <span class="fal fa-fw fa-mobile"></span>
+                    <a class="contact-page__details-link" href="tel:{{ phone_number }}">{{ phone_number }}</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </main>

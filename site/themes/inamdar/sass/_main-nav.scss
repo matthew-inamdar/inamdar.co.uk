@@ -46,3 +46,23 @@
     padding: 1rem;
     display: block;
 }
+
+.main-nav__link:hover {
+    opacity: .75;
+}
+
+@media (min-width: $desktop) {
+    .main-nav__toggle {
+        display: none;
+    }
+
+    .main-nav__list {
+        display: block;
+        position: static;
+        width: auto;
+    }
+
+    .main-nav__item {
+        display: inline-block;
+    }
+}

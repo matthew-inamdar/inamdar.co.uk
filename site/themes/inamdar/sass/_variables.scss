@@ -19,3 +19,7 @@ $background-color: $light-grey;
 // Measurements.
 $main-nav-height: calc((1.5 * 1rem) + (2 * 1rem));
 $border-radius: 3px;
+
+// Break points.
+$tablet: 720px;
+$desktop: 1140px;

@@ -30,3 +30,18 @@
 .contact-page__details-link {
     color: inherit;
 }
+
+@media (min-width: $tablet) {
+    .contact-page__container {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-page__image-section {
+        flex: 1;
+    }
+
+    .contact-page__details-section {
+        flex: 1;
+    }
+}
