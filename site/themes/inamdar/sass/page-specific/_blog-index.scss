@@ -19,12 +19,26 @@
 .blog-index-page__article-link {
     color: inherit;
     text-decoration: none;
-    padding: 1rem;
     display: block;
 }
 
 .blog-index-page__article-link:hover {
     text-decoration: underline;
+}
+
+.blog-index-page__article-image {
+    width: 100%;
+    max-width: 100%;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+}
+
+.blog-index-page__article-text {
+    padding: 1rem;
+}
+
+.blog-index-page__article-title {
+    margin-top: 0;
 }
 
 .blog-index-page__article-footer {

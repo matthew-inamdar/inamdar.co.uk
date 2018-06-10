@@ -12,17 +12,11 @@ sections:
         validate: required
       featured_image:
         container: main
-        folder: /
+        folder: img
         restrict: false
         type: assets
         display: 'Featured Image'
-        validate: image
-        width: 50
-      featured_image_alt_tag:
-        type: text
-        width: 50
-        display: 'Featured Image Alt Tag'
-        validate: 'required_with:featured_image'
+        max_files: 1
       content:
         cheatsheet: false
         restrict_assets: false

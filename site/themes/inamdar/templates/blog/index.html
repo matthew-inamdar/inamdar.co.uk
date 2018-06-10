@@ -4,22 +4,19 @@
         <div>{{ content }}</div>
 
         {{ collection from="blog" as="posts" paginate="true" limit="1" }}
-            {{ posts scope="post" }}
+            {{ posts }}
                 <article class="blog-index-page__article {{ if last }}blog-index-page__article--last{{ /if }}">
-                    <a class="blog-index-page__article-link" href="{{ post:url }}">
+                    <a class="blog-index-page__article-link" href="{{ url }}">
+                        {{ assets:featured_image }}
+                        <img class="blog-index-page__article-image" src="{{ url }}" title="{{ title }}" alt="{{ alt }}">
+                        {{ /assets:featured_image }}
 
-                        {{ if post:featured_image }}
-                        <img src="{{ post:featured_image }}" alt="{{ featured_image_alt_tag }}">
-                        {{ /if }}
-
-                        <h2 class="blog-index-page__article-title">{{ post:title }}</h2>
-
-                        <p>{{ post:excerpt }}</p>
-
-                        <p>Read More...</p>
-
-                        <footer class="blog-index-page__article-footer">Published {{ post:date | relative }}</footer>
-
+                        <div class="blog-index-page__article-text">
+                            <h2 class="blog-index-page__article-title">{{ title }}</h2>
+                            <p>{{ excerpt }}</p>
+                            <p>Read More...</p>
+                            <footer class="blog-index-page__article-footer">Published {{ date | relative }}</footer>
+                        </div>
                     </a>
                 </article>
             {{ /posts }}
