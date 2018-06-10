@@ -31,6 +31,7 @@
     position: absolute;
     left: -4.5rem;
     top: -3rem;
+    border-radius: $border-radius;
     animation: 10s 4s square-to-circle infinite;
 }
 
@@ -45,7 +46,7 @@
 
 @keyframes square-to-circle {
     from, 60%, to {
-      border-radius: 0;
+      border-radius: $border-radius;
     }
     10%, 50% {
         border-radius: 100%;

@@ -1,0 +1,33 @@
+.blog-index-page {
+    padding-top: $main-nav-height;
+}
+
+.blog-index-page__content {
+    padding: 1rem;
+}
+
+.blog-index-page__article {
+    background-color: #fff;
+    border-radius: $border-radius;
+    margin-bottom: 1rem;
+}
+
+.blog-index-page__article--last {
+    margin-bottom: 0;
+}
+
+.blog-index-page__article-link {
+    color: inherit;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
+.blog-index-page__article-link:hover {
+    text-decoration: underline;
+}
+
+.blog-index-page__article-footer {
+    color: $dark-grey;
+    font-size: .75rem;
+}

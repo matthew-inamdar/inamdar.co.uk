@@ -1,3 +1,4 @@
 title: Blog
 order: date
 template: blog/post
+fieldset: blog_post

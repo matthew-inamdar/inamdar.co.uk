@@ -3,6 +3,7 @@ $dark-blue: rgba(29, 37, 44, 1);
 $light-blue: rgba(81, 188, 213, 1);
 $medium-blue: rgba(40, 63, 146, 1);
 
+$dark-grey: rgba(128, 128, 128, 1);
 $light-grey: rgba(237, 237, 237, 1);
 $medium-grey: rgba(209, 210, 210, 1);
 
@@ -17,3 +18,4 @@ $background-color: $light-grey;
 
 // Measurements.
 $main-nav-height: calc((1.5 * 1rem) + (2 * 1rem));
+$border-radius: 3px;
