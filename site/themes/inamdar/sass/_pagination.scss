@@ -7,7 +7,6 @@
     padding: .5rem 1rem;
     color: #fff;
     background-color: $primary;
-    border-radius: $border-radius;
 }
 
 .pagination__button--disabled {
@@ -18,9 +17,25 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    justify-content: center;
 
     li {
         display: inline-block;
+    }
+
+    li:first-child {
+        .pagination__button {
+            border-top-left-radius: $border-radius;
+            border-bottom-left-radius: $border-radius;
+        }
+    }
+
+    li:last-child {
+        .pagination__button {
+            border-top-right-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
+        }
     }
 
     a {
