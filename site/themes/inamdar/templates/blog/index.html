@@ -7,9 +7,9 @@
             {{ posts }}
                 <article class="blog-index-page__article {{ if last }}blog-index-page__article--last{{ /if }}">
                     <a class="blog-index-page__article-link" href="{{ url }}">
-                        {{ assets:featured_image }}
-                        <img class="blog-index-page__article-image" src="{{ url }}" title="{{ title }}" alt="{{ alt }}">
-                        {{ /assets:featured_image }}
+                        {{ if featured_image }}
+                        <div class="blog-index-page__article-image" style="background-image: url('{{ featured_image }}');"></div>
+                        {{ /if }}
 
                         <div class="blog-index-page__article-text">
                             <h2 class="blog-index-page__article-title">{{ title }}</h2>
