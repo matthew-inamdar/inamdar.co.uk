@@ -5,9 +5,9 @@
         </h1>
     </div>
 
-    {{ assets:featured_image }}
-    <img class="blog-post-page__featured-image" src="{{ url }}" title="{{ title }}" alt="{{ alt }}">
-    {{ /assets:featured_image }}
+    {{ if featured_image }}
+    <div class="blog-post-page__featured-image" style="background-image: url('{{ featured_image }}');"></div>
+    {{ /if }}
 
     <div class="container blog-post-page__container">
         <h2 class="blog-post-page__title">{{ title }}</h2>

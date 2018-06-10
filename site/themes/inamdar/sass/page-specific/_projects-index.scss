@@ -50,3 +50,9 @@
     color: $dark-grey;
     font-size: .75rem;
 }
+
+@media (min-width: $desktop) {
+    .projects-index-page__article-image {
+        padding-top: 25%;
+    }
+}

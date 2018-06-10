@@ -29,11 +29,20 @@
 }
 
 .projects-post-page__featured-image {
-    width: 100%;
-    max-width: 100%;
+    padding-top: 50%;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    background-size: cover;
+    background-position: center;
 }
 
 .projects-post-page__footer {
     color: $dark-grey;
     font-size: .75rem;
+}
+
+@media (min-width: $desktop) {
+    .projects-post-page__featured-image {
+        padding-top: 25%;
+    }
 }
