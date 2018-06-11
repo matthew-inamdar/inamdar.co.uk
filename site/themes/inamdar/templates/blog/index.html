@@ -1,21 +1,21 @@
-<main class="container blog-index-page">
-    <div class="blog-index-page__content">
-        <h1 class="blog-index-page__title">{{ title }}</h1>
+<main class="container blog-index">
+    <div class="blog-index__content">
+        <h1 class="blog-index__title">{{ title }}</h1>
         <div>{{ content }}</div>
 
         {{ collection from="blog" as="posts" paginate="true" limit="6" }}
             {{ posts }}
-                <article class="blog-index-page__article {{ if last }}blog-index-page__article--last{{ /if }}">
-                    <a class="blog-index-page__article-link" href="{{ url }}">
+                <article class="blog-index__article {{ if last }}blog-index__article--last{{ /if }}">
+                    <a class="blog-index__article-link" href="{{ url }}">
                         {{ if featured_image }}
-                        <div class="blog-index-page__article-image" style="background-image: url('{{ featured_image }}');"></div>
+                        <div class="blog-index__article-image" style="background-image: url('{{ featured_image }}');"></div>
                         {{ /if }}
 
-                        <div class="blog-index-page__article-text">
-                            <h2 class="blog-index-page__article-title">{{ title }}</h2>
+                        <div class="blog-index__article-text">
+                            <h2 class="blog-index__article-title">{{ title }}</h2>
                             <p>{{ excerpt }}</p>
                             <p>Read More...</p>
-                            <footer class="blog-index-page__article-footer">Published {{ date | relative }}</footer>
+                            <footer class="blog-index__article-footer">Published {{ date | relative }}</footer>
                         </div>
                     </a>
                 </article>

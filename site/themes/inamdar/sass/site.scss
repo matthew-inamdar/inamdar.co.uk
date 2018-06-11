@@ -12,11 +12,10 @@
 @import "footer";
 @import "pagination";
 @import "container";
+@import "link";
+@import "blog-post";
+@import "blog-index";
 
 // Page specific partials.
 @import "page-specific/home";
 @import "page-specific/contact";
-@import "page-specific/blog-index";
-@import "page-specific/blog-post";
-@import "page-specific/projects-index";
-@import "page-specific/projects-post";

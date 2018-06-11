@@ -47,10 +47,17 @@
     text-decoration: none;
     padding: 1rem;
     display: block;
+    border-width: 0 5px;
+    border-style: solid;
+    border-color: transparent;
 }
 
 .main-nav__link:hover {
     opacity: .75;
+}
+
+.main-nav__link--active {
+    border-right-color: $secondary;
 }
 
 @media (min-width: $desktop) {
@@ -66,5 +73,14 @@
 
     .main-nav__item {
         display: inline-block;
+    }
+
+    .main-nav__link {
+        border-width: 5px 0;
+    }
+
+    .main-nav__link--active {
+        border-right-color: transparent;
+        border-bottom-color: $secondary;
     }
 }

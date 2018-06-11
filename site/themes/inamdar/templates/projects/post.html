@@ -1,19 +1,19 @@
-<main class="projects-post-page">
-        <div class="container projects-post-page__container">
-            <h1 class="projects-post-page__back">
-                <a class="projects-post-page__back-link" href="{{ parent:url }}"><span class="fal fa-fw fa-chevron-left"></span>Projects</a>
+<main class="blog-post">
+        <div class="container blog-post__container">
+            <h1 class="blog-post__back">
+                <a class="blog-post__back-link" href="{{ parent:url }}"><span class="fal fa-fw fa-chevron-left"></span>Projects</a>
             </h1>
         </div>
 
         {{ if featured_image }}
-        <div class="projects-post-page__featured-image" style="background-image: url('{{ featured_image }}');"></div>
+        <div class="blog-post__featured-image" style="background-image: url('{{ featured_image }}');"></div>
         {{ /if }}
 
-        <div class="container projects-post-page__container">
-            <h2 class="projects-post-page__title">{{ title }}</h2>
-            {{ if preview_url }}<a class="projects-post-page__preview-link" href="{{ preview_url }}" target="_blank">View the project here <span class="fal fa-external-link"></span></a>{{ /if }}
+        <div class="container blog-post__container">
+            <h2 class="blog-post__title">{{ title }}</h2>
+            {{ if preview_url }}<a class="link" href="{{ preview_url }}" target="_blank">View the project here <span class="fal fa-external-link"></span></a>{{ /if }}
             <div>{{ content }}</div>
 
-            <footer class="projects-post-page__footer">Published {{ date | relative }}</footer>
+            <footer class="blog-post__footer">Published {{ date | relative }}</footer>
         </div>
     </main>

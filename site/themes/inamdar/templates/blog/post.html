@@ -1,18 +1,18 @@
-<main class="blog-post-page">
-    <div class="container blog-post-page__container">
-        <h1 class="blog-post-page__back">
-            <a class="blog-post-page__back-link" href="{{ parent:url }}"><span class="fal fa-fw fa-chevron-left"></span>Blog</a>
+<main class="blog-post">
+    <div class="container blog-post__container">
+        <h1 class="blog-post__back">
+            <a class="blog-post__back-link" href="{{ parent:url }}"><span class="fal fa-fw fa-chevron-left"></span>Blog</a>
         </h1>
     </div>
 
     {{ if featured_image }}
-    <div class="blog-post-page__featured-image" style="background-image: url('{{ featured_image }}');"></div>
+    <div class="blog-post__featured-image" style="background-image: url('{{ featured_image }}');"></div>
     {{ /if }}
 
-    <div class="container blog-post-page__container">
-        <h2 class="blog-post-page__title">{{ title }}</h2>
+    <div class="container blog-post__container">
+        <h2 class="blog-post__title">{{ title }}</h2>
         <div>{{ content }}</div>
 
-        <footer class="blog-post-page__footer">Published {{ date | relative }}</footer>
+        <footer class="blog-post__footer">Published {{ date | relative }}</footer>
     </div>
 </main>
