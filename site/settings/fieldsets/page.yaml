@@ -5,13 +5,7 @@ sections:
       title:
         display: Title
         type: text
-        width: 66
         localizable: true
-      page_class:
-        type: text
-        width: 33
-        display: 'Page Class'
-        validate: alpha_dash
 taxonomies: true
 title: Page
 create_title: ''

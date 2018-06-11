@@ -9,6 +9,13 @@ sections:
         display: Page
       content:
         type: markdown
+  sidebar:
+    display: Sidebar
+    fields:
+      meta:
+        fieldset: meta
+        type: partial
+        display: Meta
 taxonomies: true
 title: Blog Index
 create_title: ''

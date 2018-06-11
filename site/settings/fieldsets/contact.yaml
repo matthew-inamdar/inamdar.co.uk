@@ -28,5 +28,12 @@ sections:
         width: 50
         display: 'Phone Number'
         validate: required
+  sidebar:
+    display: Sidebar
+    fields:
+      meta:
+        fieldset: meta
+        type: partial
+        display: Meta
 taxonomies: true
 title: Contact

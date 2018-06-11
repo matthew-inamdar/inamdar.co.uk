@@ -1,0 +1,18 @@
+sections:
+  meta:
+    display: Meta
+    fields:
+      slug:
+        type: text
+        display: Slug
+      page_class:
+        type: text
+        display: 'Page Class'
+        validate: alpha_dash
+      template:
+        type: template
+        display: Template
+taxonomies: true
+title: Meta
+create_title: ''
+hide: true
