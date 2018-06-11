@@ -11,7 +11,7 @@
 
         <div class="container projects-post-page__container">
             <h2 class="projects-post-page__title">{{ title }}</h2>
-            {{ if preview_url }}<a class="projects-post-page__preview-link" href="{{ preview_url }}" target="_blank">View the project here</a>{{ /if }}
+            {{ if preview_url }}<a class="projects-post-page__preview-link" href="{{ preview_url }}" target="_blank">View the project here <span class="fal fa-external-link"></span></a>{{ /if }}
             <div>{{ content }}</div>
 
             <footer class="projects-post-page__footer">Published {{ date | relative }}</footer>
