@@ -1,10 +1,8 @@
 <footer class="footer">
     <ul class="footer__icons">
-        <li class="footer__icon"><a class="footer__link footer__link--icon" href="#"><span class="fab fa-github"></span></a></li>
-        <li class="footer__icon"><a class="footer__link footer__link--icon" href="#"><span class="fab fa-stack-overflow"></span></a></li>
-        <li class="footer__icon"><a class="footer__link footer__link--icon" href="#"><span class="fab fa-linkedin"></span></a></li>
-        <li class="footer__icon"><a class="footer__link footer__link--icon" href="#"><span class="fab fa-twitter"></span></a></li>
+        {{ social_icons }}
+        <li class="footer__icon"><a class="footer__link footer__link--icon" title="{{ name }}" href="{{ url }}" target="_blank"><span class="fab {{ class }}"></span></a></li>
+        {{ /social_icons }}
     </ul>
-    <br>
     Copyright &copy; {{ current_date format='Y' }} Matthew Inamdar. All rights reserved.
 </footer>

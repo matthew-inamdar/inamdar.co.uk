@@ -9,4 +9,28 @@ sections:
         display: 'Website Name'
         instructions: 'The name of your website'
         localizable: true
+        validate: required
+      social_icons:
+        sets:
+          icon:
+            display: Icon
+            fields:
+              name:
+                type: text
+                width: 33
+                display: Name
+                validate: required
+              class:
+                type: text
+                width: 33
+                display: Class
+                validate: required|alpha_dash
+              url:
+                type: text
+                width: 33
+                display: URL
+                validate: required|url
+        type: replicator
+        display: 'Social Icons'
+        validate: required
 taxonomies: true

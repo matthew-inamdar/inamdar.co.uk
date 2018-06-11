@@ -1,3 +1,24 @@
+site_name: 'Matthew Inamdar'
+social_icons:
+  -
+    type: icon
+    name: GitHub
+    class: fa-github
+    url: 'https://github.com/matthew-inamdar'
+  -
+    type: icon
+    name: 'Stack Overflow'
+    class: fa-stack-overflow
+    url: 'https://stackoverflow.com/users/5745438/matthew-inamdar'
+  -
+    type: icon
+    name: LinkedIn
+    class: fa-linkedin
+    url: 'https://www.linkedin.com/in/matthew-inamdar'
+  -
+    type: icon
+    name: Twitter
+    class: fa-twitter
+    url: 'https://twitter.com/matthew_inamdar'
+author_name: 'Matthew Inamdar'
 id: d9bfc09a-3a90-41d3-8acc-3f551f8432af
-site_name: Matthew Inamdar
-author_name: Matthew Inamdar
