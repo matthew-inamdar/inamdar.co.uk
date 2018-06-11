@@ -11,15 +11,8 @@
 }
 
 .blog-index__article {
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
-    border-bottom: 1px solid $medium-grey;
-    margin-bottom: 1rem;
-}
-
-.blog-index__article--last {
-    margin-bottom: 0;
-    border-bottom: none;
+    border-top: 1px solid $medium-grey;
+    padding: 2rem 0;
 }
 
 .blog-index__article-link {
@@ -34,14 +27,13 @@
 
 .blog-index__article-image {
     padding-top: 50%;
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
+    border-radius: $border-radius;
     background-size: cover;
     background-position: center;
 }
 
 .blog-index__article-text {
-    padding: 1rem;
+    padding: 1rem 1rem 0;
 }
 
 .blog-index__article-title {

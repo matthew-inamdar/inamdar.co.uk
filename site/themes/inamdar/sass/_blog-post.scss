@@ -38,6 +38,10 @@
 }
 
 @media (min-width: $desktop) {
+    .blog-post {
+        padding-top: $main-nav-height-large
+    }
+
     .blog-post__featured-image {
         padding-top: 25%;
     }
